@@ -1,3 +1,4 @@
+import { ImageSlider } from '../imageSlider/imageSlider'
 import style from './mainC.module.scss'
 
 const Example = () => {
@@ -21,6 +22,7 @@ export function Main() {
   return (
     <main className={style.mainMain}>
       <Example />
+      <ImageSlider />
     </main>
   )
 }

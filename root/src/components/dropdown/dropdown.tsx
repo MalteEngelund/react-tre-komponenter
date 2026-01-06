@@ -12,11 +12,15 @@ export const Dropdown = () => {
         Menu
       </button>
 
-      {isOpen && (
-        <ul className={style.dropdownMenu}>
-          <li>Profile</li>
-          <li>Settings</li>
-          <li>Logout</li>
+      {!isOpen && (
+        <ul
+        className={`${style.dropdownMenu} ${
+          isOpen ? style.open : ""
+        }`}
+      >
+          <li><a href="">Profile</a></li>
+          <li><a href="">Settings</a></li>
+          <li><a href="">Logout</a></li>
         </ul>
       )}
     </div>
