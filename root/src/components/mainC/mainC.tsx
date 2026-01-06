@@ -1,7 +1,26 @@
-import './mainC.css'
+import style from './mainC.module.scss'
+
+const Example = () => {
+  const isActive = true
+
+  return (
+    <>
+      <p style={{ color: "red" }}>
+        Hello
+      </p>
+
+      {/* Ternary operator (if/else) to switch color */}
+      <p style={isActive ? { color: "blue" } : { color: "red" }}>
+        Hello
+      </p>
+    </>
+  )
+}
 
 export function Main() {
   return (
-    <main className='mainMain' /* :) */></main>
+    <main className={style.mainMain}>
+      <Example />
+    </main>
   )
 }

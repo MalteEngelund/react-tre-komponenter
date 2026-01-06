@@ -1,10 +1,12 @@
-import './header.css'
+import style from './header.module.scss'
 import { Nav } from '../nav/nav'
+import { Dropdown } from '../dropdown/dropdown'
 
 
 export function Header() {
   return (
-    <header className='headerMain'>
+    <header className={style.headerMain}>
+      <Dropdown />
       <Nav />
     </header>
   )
