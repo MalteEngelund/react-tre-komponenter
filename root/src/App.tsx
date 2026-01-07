@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header />
-      <Headerv2 colorVariant={'red'} /> {/* bruger default når der ikke er en prop.. hvorfor skal det være så besværligt at skrive kommentarer, mand? :) */}
+      <Headerv2 headerText={'Props er cool!'} colorVariant={'red'} /> {/* bruger default når der ikke er en prop.. hvorfor skal det være så besværligt at skrive kommentarer, mand? :) */}
       <Main />
       <Button textValue={"is it work"} colorVariant={"blue"}/>
       <Button textValue={"Hej Bob"} colorVariant={"green"}/>
