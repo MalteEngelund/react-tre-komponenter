@@ -22,11 +22,13 @@ const Example = () => {
 export function Main() {
   return (
     <main className={style.mainMain}>
-      <Example />
+      {/* <Example /> */}
+
       <Button textValue={"is it work?"} colorVariant={"blue"}/>
       <Button textValue={"Hej Bob Loblaw"} colorVariant={"green"}/>
       <Button textValue={"Hej Gob"} colorVariant={"blue"}/>
       <Button textValue={"Hej Lucille"} colorVariant={"green"}/>
+
       <ImageSlider />
     </main>
   )
