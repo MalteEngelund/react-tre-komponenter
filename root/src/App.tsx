@@ -7,6 +7,7 @@ import { Button } from './components/button/button'
 import { Headerv2 } from './components/headerV2/headerV2'
 import { Wrapper } from './components/wrapper/wrapper'
 import { Liste } from './components/liste/liste'
+import { ButtonV2 } from './components/button/buttonV2'
 
 interface LivretterInterface { 
   Livretter: string[]
@@ -35,12 +36,17 @@ function App() {
         ))}
       </Wrapper>
 
-      <Button textValue={"is it work"} colorVariant={"blue"}/>
+      <Wrapper> {/* dynamiske knapper */}
+        <ButtonV2 action={() => {alert('du har trykke på den lille knap!')}} size={'small'} theme={'light'} textValue={'small'} />
+        <ButtonV2 action={() => {alert('du har trykke på den mellemstore knap!')}} size={'medium'} theme={'dark'} textValue={'medium'} />
+        <ButtonV2 action={() => {alert('du har trykke på den store knap!')}} size={'large'} theme={'light'} textValue={'large'} />
+      </Wrapper>
+
       <Button textValue={"Hej Bob"} colorVariant={"green"}/>
       <Button textValue={"Hej Gob"} colorVariant={"blue"}/>
       <Button textValue={"Hej Lucille"} colorVariant={"green"}/>
-      
-      <Footer />
+
+      {/* <Footer /> */}
     </>
   )
 }
