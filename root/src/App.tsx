@@ -3,6 +3,7 @@ import './App.css'
 import { Header } from './components/header/header'
 import { Main } from './components/mainC/mainC'
 import { Footer } from './components/footer/footer'
+import { Button } from './components/button/button'
 
 function App() {
 
@@ -11,6 +12,10 @@ function App() {
     <>
       <Header />
       <Main />
+      <Button textValue={"is it work"} colorVariant={"blue"}/>
+      <Button textValue={"Hej Bob"} colorVariant={"green"}/>
+      <Button textValue={"Hej Gob"} colorVariant={"blue"}/>
+      <Button textValue={"Hej Lucille"} colorVariant={"green"}/>
       <Footer />
     </>
   )
